@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+
+		      // var a = 10;
+        //        console.log(a);
+        //        function fn(){
+        //            console.log(a);
+        //            var b = 20;
+        //            console.log(b);
+        //            c = 30;
+        //            console.log(c);
+        //        }
+        //        fn();
+        //        console.log(b);
+        //        // console.log(c);
+
+
+         var obj = {
+           //属性 名词
+           name:"zs",
+           age:16,
+           height:175,
+           weight:120,
+           //方法 动词
+           eat:function(a){
+               console.log(this.name +  "在吃" + a);
+           }
+       };
+        // 访问obj对象里的属性
+        console.log(obj.name);
+        console.log(obj["height"]);
+        // 访问obj对象里的方法
+        obj.eat("菜");
+	</script>
+</body>
+</html>

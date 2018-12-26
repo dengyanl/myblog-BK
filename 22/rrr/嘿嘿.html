@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IG牛逼</title>
+	<meta name="author" content="zuoic">
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	h2 	{
+		margin-top:10px;
+		text-align: center;
+		font-size: 30px;
+	}
+	h2:first-line{
+		font-size: 50px;
+	}
+	</style>
+</head>
+<body>
+	<h2></h2>
+	<script>
+		const h2 =document.querySelector("h2")
+		let str ="你好漂亮呀mua~"
+		const len = str.length
+		let i = 0
+		function running(){
+			if(i<=str.length){
+				if(str[i]==="<")i+=4
+					h2.innerHTML = str.slice(0,i++) + '_'
+				setTimeout('running()',400);
+			}
+			else{
+				h2.innerHTML = '你好漂亮呀mua~'
+			}
+		}
+		running();
+	</script>
+</body>
+</html>
